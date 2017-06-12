@@ -1,5 +1,7 @@
 package com.tomi.algorithms.iteration;
 
+import com.tomi.algorithms.iteration.interfaces.Iterator;
+import com.tomi.algorithms.iteration.interfaces.Predicate;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

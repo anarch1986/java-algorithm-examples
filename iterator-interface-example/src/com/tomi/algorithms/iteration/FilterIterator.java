@@ -1,5 +1,8 @@
 package com.tomi.algorithms.iteration;
 
+import com.tomi.algorithms.iteration.interfaces.Iterator;
+import com.tomi.algorithms.iteration.interfaces.Predicate;
+
 /**
  * Created by tomi on 2017.06.12..
  */

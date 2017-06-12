@@ -1,4 +1,6 @@
-package com.tomi.algorithms.iteration;
+package com.tomi.algorithms.iteration.interfaces;
+
+import com.tomi.algorithms.iteration.IteratorOutOfBoundsException;
 
 /**
  * Created by tomi on 2017.06.12..
