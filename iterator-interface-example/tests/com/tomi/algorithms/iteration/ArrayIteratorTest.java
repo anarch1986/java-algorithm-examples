@@ -31,7 +31,7 @@ public class ArrayIteratorTest {
         try {
             iterator.current();
         } catch (IteratorOutOfBoundsException e) {
-            // ezt várjuk
+
         }
     }
 
@@ -59,7 +59,7 @@ public class ArrayIteratorTest {
         try {
             iterator.current();
         } catch (IteratorOutOfBoundsException e) {
-            // ezt várjuk
+
         }
 
     }

@@ -12,13 +12,13 @@ public class ArrayIterator implements Iterator {
     public ArrayIterator(Object[] array, int start, int length) {
         assert array != null : "The array can't be null";
         assert start >= 0 : "The starting position can't be zero";
-        assert start < array.length : "starting position can't be bigger" +
+        assert start < array.length : "The starting position can't be bigger" +
                 "than the length of the array";
-        assert length >= 0 : "length can't be negative";
+        assert length >= 0 : "The length can't be negative";
         _array = array;
         _first = start;
         _last = start + length - 1;
-        assert _last < array.length : "start: + length can't be bigger than" +
+        assert _last < array.length : "Start + length can't be bigger than" +
                 "the length of the array";
 
     }
@@ -30,26 +30,32 @@ public class ArrayIterator implements Iterator {
         _last = array.length - 1;
     }
 
+    @Override
     public void first() {
         _current = _first;
     }
 
+    @Override
     public void last() {
         _current = _last;
     }
 
+    @Override
     public void next() {
         ++_current;
     }
 
+    @Override
     public void previous() {
         --_current;
     }
 
+    @Override
     public boolean isDone() {
         return _current < _first || _current > _last;
     }
 
+    @Override
     public Object current() throws IteratorOutOfBoundsException {
         if (isDone()) {
             throw new IteratorOutOfBoundsException();
