@@ -1,2 +1,2 @@
-# java-algorthm-examples
+# java-algorithm-examples
 Algorithm exercises for Java
