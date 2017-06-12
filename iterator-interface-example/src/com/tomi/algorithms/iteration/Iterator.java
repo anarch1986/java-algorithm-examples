@@ -3,7 +3,7 @@ package com.tomi.algorithms.iteration;
 /**
  * Created by tomi on 2017.06.12..
  */
-public interface MyIterator {
+public interface Iterator {
 
     void first();
 
@@ -15,6 +15,6 @@ public interface MyIterator {
 
     void previous();
 
-    Object current() throws MyIteratorOutOfBoundsException;
+    Object current() throws IteratorOutOfBoundsException;
 
 }
